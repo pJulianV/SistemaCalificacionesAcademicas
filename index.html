@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sistema de Calificaciones Académicas</title>
+	<style>
+        @import url('style.css');
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h2>Sistema de Calificaciones</h2>
+		<form>
+			<div class="form-group">
+				<label for="nombre">Nombre del estudiante</label>
+				<input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre">
+			</div>
+			<div class="form-group">
+				<label for="nota1">Nota 1</label>
+				<input type="number" id="nota1" name="nota1" placeholder="Ingrese la nota" min="0" max="5">
+			</div>
+			<div class="form-group">
+				<label for="peso1">Peso 1</label>
+				<input type="number" id="peso1" name="peso1" placeholder="Ingrese el peso" min="0" max="100">
+			</div>
+			<div class="form-group">
+				<label for="nota2">Nota 2</label>
+				<input type="number" id="nota2" name="nota2" placeholder="Ingrese la nota" min="0" max="5">
+			</div>
+			<div class="form-group">
+				<label for="peso2">Peso 2</label>
+				<input type="number" id="peso2" name="peso2" placeholder="Ingrese el peso" min="0" max="100">
+			</div>
+			<div class="form-group">
+				<label for="nota3">Nota 3</label>
+				<input type="number" id="nota3" name="nota3" placeholder="Ingrese la nota" min="0" max="5">
+			</div>
+			<div class="form-group">
+				<label for="peso3">Peso 3</label>
+				<input type="number" id="peso3" name="peso3" placeholder="Ingrese el peso" min="0" max="100">
+			</div>
+			<button type="button" class="btn" disabled>Calcular</button>
+		</form>
+		<div class="result">
+			<p><strong>Promedio ponderado:</strong> <span id="promedio">-</span></p>
+			<p><strong>Estado:</strong> <span id="estado">-</span></p>
+			<p><strong>Calificación cualitativa:</strong> <span id="cualitativa">-</span></p>
+		</div>
+	</div>
+</body>
+</html>
