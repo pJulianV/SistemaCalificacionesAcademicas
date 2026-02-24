@@ -5,49 +5,54 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Sistema de Calificaciones Académicas</title>
 	<style>
+        /* Importar el archivo CSS externo para los estilos */
         @import url('style.css');
 	</style>
 </head>
 <body>
-	<div class="container">
-		<h2>Sistema de Calificaciones</h2>
-		<form>
-			<div class="form-group">
-				<label for="nombre">Nombre del estudiante</label>
-				<input type="text" id="nombre" name="nombre" placeholder="Ingrese el nombre">
-			</div>
-			<div class="form-group">
-				<label for="nota1">Nota 1</label>
-				<input type="number" id="nota1" name="nota1" placeholder="Ingrese la nota" min="0" max="5">
-			</div>
-			<div class="form-group">
-				<label for="peso1">Peso 1</label>
-				<input type="number" id="peso1" name="peso1" placeholder="Ingrese el peso" min="0" max="100">
-			</div>
-			<div class="form-group">
-				<label for="nota2">Nota 2</label>
-				<input type="number" id="nota2" name="nota2" placeholder="Ingrese la nota" min="0" max="5">
-			</div>
-			<div class="form-group">
-				<label for="peso2">Peso 2</label>
-				<input type="number" id="peso2" name="peso2" placeholder="Ingrese el peso" min="0" max="100">
-			</div>
-			<div class="form-group">
-				<label for="nota3">Nota 3</label>
-				<input type="number" id="nota3" name="nota3" placeholder="Ingrese la nota" min="0" max="5">
-			</div>
-			<div class="form-group">
-				<label for="peso3">Peso 3</label>
-				<input type="number" id="peso3" name="peso3" placeholder="Ingrese el peso" min="0" max="100">
-			</div>
-			<button type="button" class="btn" disabled>Calcular</button>
-		</form>
-		<div class="result">
-			<p><strong>Promedio ponderado:</strong> <span id="promedio">-</span></p>
-			<p><strong>Estado:</strong> <span id="estado">-</span></p>
-			<p><strong>Calificación cualitativa:</strong> <span id="cualitativa">-</span></p>
-		</div>
-	</div>
+    <div class="container">
+        <h2>Calculadora de Notas</h2>
+        
+        <div class="form-group">
+            <!-- Campo de entrada para el nombre del estudiante -->
+            <label>Nombre del Estudiante:</label>
+            <input type="text" id="nombre" placeholder="Nombre">
+        </div>
+
+        <div class="notas-grid">
+            <!-- Campos de entrada para las notas y sus respectivos pesos -->
+            <div class="row">
+                <input type="number" id="nota1" placeholder="Nota 1" min="0" max="5" step="0.1">
+                <input type="number" id="peso1" placeholder="Peso %" min="0" max="100">
+            </div>
+            <div class="row">
+                <input type="number" id="nota2" placeholder="Nota 2">
+                <input type="number" id="peso2" placeholder="Peso %">
+            </div>
+            <div class="row">
+                <input type="number" id="nota3" placeholder="Nota 3">
+                <input type="number" id="peso3" placeholder="Peso %">
+            </div>
+            <div class="row">
+                <input type="number" id="nota4" placeholder="Nota 4">
+                <input type="number" id="peso4" placeholder="Peso %">
+            </div>
+            <div class="row">
+                <input type="number" id="nota5" placeholder="Nota 5">
+                <input type="number" id="peso5" placeholder="Peso %">
+            </div>
+        </div>
+
+        <!-- Botón para calcular el promedio -->
+        <button id="btnCalcular" class="btn">Calcular Promedio</button>
+
+        <div class="result">
+            <!-- Mostrar los resultados calculados -->
+            <p>Promedio: <span id="promedio">-</span></p>
+            <p>Estado: <span id="estado">-</span></p>
+            <p>Cualitativa: <span id="cualitativa">-</span></p>
+        </div>
+    </div>
 </body>
 <script src="main.js"></script>
 </html>
