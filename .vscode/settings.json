@@ -3,7 +3,15 @@
         "terminal.background": "#00000000",
         "activityBar.background": "#19340B",
         "titleBar.activeBackground": "#23490F",
-        "titleBar.activeForeground": "#F5FCF2"
+        "titleBar.activeForeground": "#F5FCF2",
+        "titleBar.inactiveBackground": "#19340B",
+        "titleBar.inactiveForeground": "#F5FCF2",
+        "statusBar.background": "#19340B",
+        "statusBar.foreground": "#F5FCF2",
+        "statusBar.debuggingBackground": "#19340B",
+        "statusBar.debuggingForeground": "#F5FCF2",
+        "statusBar.noFolderBackground": "#19340B",
+        "statusBar.noFolderForeground": "#F5FCF2"
     },
     "liveServer.settings.port": 5501
 }
